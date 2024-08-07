@@ -1,0 +1,76 @@
+@use '../objects/button';
+
+.about,
+.adress {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+
+    &__title-area {
+        width: 100%;
+        display: block;
+        text-align: center;
+        margin-bottom: 15px;
+        padding-top: 15px;
+        &__title {
+            font-size: 30px;
+        }
+    }
+
+    &__infos {
+        display: flex;
+        max-width: 90%;
+        margin: 0 auto;
+        gap: 10vw;
+
+        &__text-area {
+            display: flex;
+            max-width: 40%;
+            text-align: center;
+            align-items: center;
+        }
+
+        &__img-area {
+            max-width: 40%;
+            &__img {
+                width: auto;
+                height: 70vh;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .about,
+    .adress {
+        &__title-area {
+            display: block;
+            padding-left: 10px;
+            padding-right: 10px;
+            &__title {
+                font-size: 20px;
+            }
+        }
+    
+        &__infos {
+            display: flex;
+            flex-direction: column;
+            flex-direction: column-reverse;
+    
+            &__text-area {
+                max-width: 90%;
+                margin-bottom: 15vh;
+            }
+    
+            &__img-area {
+                display: flex;
+                max-width: 90%;
+                justify-content: center;
+                &__img {
+                    width: auto;
+                    height: 30vh;
+                }
+            }
+        }
+    }
+}

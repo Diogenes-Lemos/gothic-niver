@@ -1,3 +1,20 @@
-.body {
-    background-color: red;
+@use './sections/header';
+@use './sections/about';
+@use './sections/content';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: #fff;
+    list-style: none;
+    font-family: diablo, sans-serif;
 }
+
+@font-face {
+    font-family: 'diablo';
+    src: url('./fonts/Diablo_Light.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
